@@ -1,0 +1,16 @@
+<idea-plugin version="2">
+  <name>ObjectiveCPD</name>
+  <description>Copy-paste detection for AppCode</description>
+  <version>1.0</version>
+  <vendor>Yuri Kotov</vendor>
+
+  <idea-version since-build="107.105"/>
+
+  <!--suppress PluginXmlValidity -->
+  <depends>com.intellij.modules.objc</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <globalInspection implementationClass="pro.advantis.java.OCPDInspection"
+                        displayName="Copy-Paste"  groupName="" enabledByDefault="true" />
+  </extensions>
+</idea-plugin>
